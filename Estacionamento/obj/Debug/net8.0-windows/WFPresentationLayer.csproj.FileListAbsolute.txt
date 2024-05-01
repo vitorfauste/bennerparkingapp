@@ -1,0 +1,17 @@
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\WFPresentationLayer.exe
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\WFPresentationLayer.deps.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\WFPresentationLayer.runtimeconfig.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\WFPresentationLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\WFPresentationLayer.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.FormEntradaSaidaVeiculos.resources
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.csproj.GenerateResource.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.AssemblyInfoInputs.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.AssemblyInfo.cs
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.sourcelink.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\refint\WFPresentationLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.genruntimeconfig.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\ref\WFPresentationLayer.dll
