@@ -10,9 +10,16 @@ namespace DataAccessLayer.Repositories
 {
     public class VeiculoRepository
     {
-        EstacionamentoContext db = new EstacionamentoContext();
-        Veiculo veiculo = new Veiculo();   
-        db.Veiculos.Add(veiculo);
-        db.SaveChanges;
+        private readonly EstacionamentoContext _db;
+        public VeiculoRepository(EstacionamentoContext db)
+        {
+            this._db = db;
+        }
+
+        public void AdicionarVeiculo(Veiculo veiculo)
+        {
+            this._db.Veiculos.Add(veiculo);
+            this._db.SaveChanges();
+        }
     }
 }

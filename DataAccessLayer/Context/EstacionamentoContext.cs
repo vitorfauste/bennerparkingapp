@@ -15,7 +15,10 @@ namespace DataAccessLayer.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Filename=MeuBancoDeDados.db");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vtor_\OneDrive\Documentos\ParkingAppDB.mdf;Integrated Security=True;Connect Timeout=60");
+            }
         }
     }
 

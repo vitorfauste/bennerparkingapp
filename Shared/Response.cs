@@ -10,8 +10,8 @@ namespace Shared
     {
         public Response(string message, bool hasSuccess)
         {
-            Message = message;
-            HasSuccess = hasSuccess;
+            this.Message = message;
+            this.HasSuccess = hasSuccess;
         }
 
         public string Message { get; set; }
