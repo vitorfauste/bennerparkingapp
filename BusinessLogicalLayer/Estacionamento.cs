@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicalLayer
 {
-    internal class Estacionamento
+    public class Estacionamento
     {
     }
 }
