@@ -4,5 +4,11 @@
     <Compile Update="FormEntradaSaidaVeiculos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormRegistrarEntradaModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormRegistrarSaidaModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

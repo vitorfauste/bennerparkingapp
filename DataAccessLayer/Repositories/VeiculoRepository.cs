@@ -15,11 +15,5 @@ namespace DataAccessLayer.Repositories
         {
             this._db = db;
         }
-
-        public void AdicionarVeiculo(Veiculo veiculo)
-        {
-            this._db.Veiculos.Add(veiculo);
-            this._db.SaveChanges();
-        }
     }
 }
