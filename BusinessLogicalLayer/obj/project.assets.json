@@ -74,6 +74,16 @@
         "runtime": {
           "bin/placeholder/Entities.dll": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -156,13 +166,19 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Entities >= 1.0.0",
       "FluentValidation >= 11.9.1",
-      "FluentValidation.AspNetCore >= 11.3.0"
+      "FluentValidation.AspNetCore >= 11.3.0",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -194,6 +210,9 @@
           "projectReferences": {
             "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\Shared\\Shared.csproj"
             }
           }
         }

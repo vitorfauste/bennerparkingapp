@@ -10,15 +10,15 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class VeiculoRepository : Repository<Veiculo>, ICarroRepository
+    public class VigenciaPrecoRepository : Repository<VigenciaPreco>, IVigenciaPrecoRepository
     {
-        public VeiculoRepository(EstacionamentoContext context) : base(context)
+        public VigenciaPrecoRepository(EstacionamentoContext context) : base(context)
         {
         }
 
-        public async Task<Veiculo> GetByPlaca(string placa)
+        public async Task<VigenciaPreco> GetInstance()
         {
-            return await _context.Set<Veiculo>().Where(where => where.Placa == placa).FirstOrDefaultAsync();
+            return await _context.Set<VigenciaPreco>().FirstOrDefaultAsync();
         }
     }
 }

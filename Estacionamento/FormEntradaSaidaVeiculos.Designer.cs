@@ -80,7 +80,7 @@
             // lblEstacionamento
             // 
             lblEstacionamento.AutoSize = true;
-            lblEstacionamento.Location = new Point(73, 9);
+            lblEstacionamento.Location = new Point(124, 8);
             lblEstacionamento.Name = "lblEstacionamento";
             lblEstacionamento.Size = new Size(92, 15);
             lblEstacionamento.TabIndex = 3;
@@ -90,7 +90,7 @@
             // picboxLogo
             // 
             picboxLogo.Image = Properties.Resources.image;
-            picboxLogo.Location = new Point(-132, 42);
+            picboxLogo.Location = new Point(-81, 41);
             picboxLogo.Name = "picboxLogo";
             picboxLogo.Size = new Size(521, 142);
             picboxLogo.SizeMode = PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             // 
             lblNomeEstacionamento.AutoSize = true;
             lblNomeEstacionamento.Font = new Font("Segoe UI", 15F);
-            lblNomeEstacionamento.Location = new Point(35, 24);
+            lblNomeEstacionamento.Location = new Point(86, 23);
             lblNomeEstacionamento.Name = "lblNomeEstacionamento";
             lblNomeEstacionamento.Size = new Size(196, 28);
             lblNomeEstacionamento.TabIndex = 5;
