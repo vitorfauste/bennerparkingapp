@@ -1,0 +1,16 @@
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\BusinessLogicalLayer.deps.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\BusinessLogicalLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\BusinessLogicalLayer.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\Entities.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\Entities.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.csproj.AssemblyReference.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.AssemblyInfoInputs.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.AssemblyInfo.cs
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.csproj.CoreCompileInputs.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.sourcelink.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\Business.CF305174.Up2Date
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\refint\BusinessLogicalLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\ref\BusinessLogicalLayer.dll

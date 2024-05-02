@@ -1,0 +1,12 @@
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Entities\obj\Debug\net8.0\ref\Entities.dll
