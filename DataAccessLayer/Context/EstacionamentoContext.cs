@@ -1,5 +1,6 @@
 ﻿using Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +11,16 @@ namespace DataAccessLayer.Context
 {
     public class EstacionamentoContext : DbContext
     {
+        public EstacionamentoContext()
+        {
+        }
+
+        public EstacionamentoContext(DbContextOptions<EstacionamentoContext> options) : base(options)
+        {
+        }
+
         public DbSet<Veiculo> Veiculos { get; set; }
         public DbSet<TabelaPreco> TabelaPrecos { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vtor_\OneDrive\Documentos\ParkingAppDB.mdf;Integrated Security=True;Connect Timeout=60");
-            }
-        }
+        public DbSet<RegistroEstacionamento> RegistroEstacionamento { get; set; }
     }
-
 }

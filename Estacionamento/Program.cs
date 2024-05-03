@@ -3,6 +3,8 @@ using BusinessLogicalLayer.Services;
 using DataAccessLayer.Context;
 using DataAccessLayer.Interfaces.Repositories;
 using DataAccessLayer.Repositories;
+using Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace WFPresentationLayer
@@ -21,14 +23,14 @@ namespace WFPresentationLayer
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormEntradaSaidaVeiculos());
+            Application.Run(new FormEntradaSaidaVeiculos(serviceProvider));
         }
 
         static IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
 
-            //services.AddAutoMapper(typeof(RegistroProfile));
+            services.AddAutoMapper(typeof(RegistroEstacionamentoMapper));
             services.AddMemoryCache();
 
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
@@ -38,6 +40,8 @@ namespace WFPresentationLayer
             services.AddScoped(typeof(IVigenciaPrecoRepository), typeof(VigenciaPrecoRepository));
             services.AddScoped(typeof(IRegistroEstacionamentoService), typeof(RegistroEstacionamentoService));
             services.AddScoped(typeof(IVigenciaPrecoService), typeof(VigenciaPrecoService));
+
+            services.AddDbContext<EstacionamentoContext>(options => options.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vtor_\OneDrive\Documentos\ParkingAppDB.mdf;Integrated Security=True;Connect Timeout=60"));
 
             return services.BuildServiceProvider();
         }

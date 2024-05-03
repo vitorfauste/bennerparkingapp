@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Q80OSyDdHEYaE37BD9q11uipzwXJly6yIyZ/OLz9p1D1XCzkkmbximUDSoACZs4dQB9HOwPxfrFbMhiyQHJoLQ==",
+  "dgSpecHash": "VjbkZm63kCoLOLiOAtw67KnVR+KX8I5C0Zq6CWc41MmFqadTLbpXsVnzCUzjC3fepJA6tV8wtPJd8NnEvvzbwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vtor_\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\azure.identity\\1.11.2\\azure.identity.1.11.2.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

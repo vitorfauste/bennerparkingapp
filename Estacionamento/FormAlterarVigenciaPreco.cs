@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using BusinessLogicalLayer.Interfaces;
+using Entities;
 
 namespace WFPresentationLayer
 {
     public partial class FormAlterarVigenciaPreco : Form
     {
-        public FormAlterarVigenciaPreco()
+        private readonly IVigenciaPrecoService _vigenciaPrecoService;
+        bool HasVigence = true;
+        public FormAlterarVigenciaPreco(IVigenciaPrecoService vigenciaPrecoService)
         {
+            this._vigenciaPrecoService = vigenciaPrecoService;
             InitializeComponent();
 
             txtValor.KeyPress += new KeyPressEventHandler(this.txtValor_KeyPress);
@@ -47,9 +52,29 @@ namespace WFPresentationLayer
             txtValor.TextChanged += this.txtValor_TextChanged;
         }
 
-        private void btnConfirmar_Click(object sender, EventArgs e)
+        private async void btnConfirmar_Click(object sender, EventArgs e)
         {
+            VigenciaPreco vigencia = new()
+            {
+                Inicio = Convert.ToDateTime(dtpInicioVigencia.Text),
+                Fim = Convert.ToDateTime(dtpFimVigencia.Text),
+                ValorHora = Convert.ToDecimal(txtValor.Text.Replace("R", "").Replace("$", "").Replace(",", ".").Replace(" ", ""))
+            };
+            var response = HasVigence ? await _vigenciaPrecoService.UpdateInstance(vigencia) : await _vigenciaPrecoService.Create(vigencia);
+            MessageBox.Show(response.Message);
+        }
 
+        private async void FormAlterarVigenciaPreco_Load(object sender, EventArgs e)
+        {
+            //var vigence = await _vigenciaPrecoService.GetInstance();
+            //if (vigence != null)
+            //{
+            //    dtpInicioVigencia.Value = vigence.Item.Inicio;
+            //    dtpFimVigencia.Value = vigence.Item.Fim;
+            //    txtValor.Text = vigence.Item.ValorHora.ToString();
+            //}
+            //else
+            //{ HasVigence = false; }
         }
     }
 }

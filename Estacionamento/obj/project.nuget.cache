@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "51rzuDo5e01pOH097xyJoq7xCY6YV5xv8NrPUFYks2t/mRmOml6XJ7hU3chr+pb7bnlFCpTU0qn4ga4rPOqK+g==",
+  "dgSpecHash": "dgbXrPmI8KDGpIHKcTyfwGz2mfvXEedToY6sOplPMum4wtiBtQNdJ6E9kD+9ca6Yt8vz0n6wR7ds+vgu4LyYeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\Estacionamento\\WFPresentationLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vtor_\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\azure.identity\\1.11.2\\azure.identity.1.11.2.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",

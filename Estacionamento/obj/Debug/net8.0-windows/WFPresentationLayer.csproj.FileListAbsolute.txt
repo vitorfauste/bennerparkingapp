@@ -135,3 +135,4 @@ C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Deb
 C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\Entities.pdb
 C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\Shared.pdb
 C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\obj\Debug\net8.0-windows\WFPresentationLayer.FormAlterarVigenciaPreco.resources
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\Estacionamento\bin\Debug\net8.0-windows\AutoMapper.dll

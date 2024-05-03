@@ -123,6 +123,7 @@
             Controls.Add(dtpInicioVigencia);
             Name = "FormAlterarVigenciaPreco";
             Text = "FormAlterarVigenciaPreco";
+            Load += FormAlterarVigenciaPreco_Load;
             ResumeLayout(false);
             PerformLayout();
         }

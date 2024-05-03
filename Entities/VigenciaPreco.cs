@@ -17,7 +17,6 @@ namespace Entities
             this.Inicio = vigencia.Inicio;
             this.Fim = vigencia.Fim;
             this.ValorHora = vigencia.ValorHora;
-
         }
     }
 }

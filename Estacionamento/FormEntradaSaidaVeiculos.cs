@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLogicalLayer.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +15,13 @@ namespace WFPresentationLayer
 {
     public partial class FormEntradaSaidaVeiculos : Form
     {
-        public FormEntradaSaidaVeiculos()
+        private readonly IVigenciaPrecoService _vigenciaPrecoService;
+        private readonly IRegistroEstacionamentoService _registroEstacionamentoService;
+
+        public FormEntradaSaidaVeiculos(IServiceProvider serviceProvider)
         {
+            _vigenciaPrecoService = serviceProvider.GetService<IVigenciaPrecoService>();
+            _registroEstacionamentoService = serviceProvider.GetService<IRegistroEstacionamentoService>();
 
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000; // 1 segundo
@@ -28,15 +35,16 @@ namespace WFPresentationLayer
             lblDataHora.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy, HH:mm:ss");
         }
 
-        private void btnEntrada_Click(object sender, EventArgs e)
+        private async void btnEntrada_Click(object sender, EventArgs e)
         {
-            FormRegistrarEntradaModal formEntrada = new FormRegistrarEntradaModal();
+            var valor = await _vigenciaPrecoService.GetInstance();
+            FormRegistrarEntradaModal formEntrada = new FormRegistrarEntradaModal(valor.Item != null ? valor.Item.ValorHora : 5, _registroEstacionamentoService);
             formEntrada.ShowDialog();
         }
 
         private void btnVigencia_Click(object sender, EventArgs e)
         {
-            FormAlterarVigenciaPreco formVigencia = new FormAlterarVigenciaPreco();
+            FormAlterarVigenciaPreco formVigencia = new FormAlterarVigenciaPreco(_vigenciaPrecoService);
             formVigencia.ShowDialog();
         }
     }

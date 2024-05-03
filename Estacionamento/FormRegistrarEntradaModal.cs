@@ -20,9 +20,9 @@ namespace WFPresentationLayer
         {
             this.valor = valorHora;
             this._registroEstacionamentoService = registro;
+            InitializeComponent();
             dtpHora.Format = DateTimePickerFormat.Time;
             txtPlaca.MaxLength = 8;
-            InitializeComponent();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)

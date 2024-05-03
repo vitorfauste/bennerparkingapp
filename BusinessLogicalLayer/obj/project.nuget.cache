@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NLsYqgjUpb8cwhHobZ3ei1YbtntnjARb/Sz/0cn5qbYGvOw+Bl6K1byYWKes/KBGMiC2EBTRVBh49PwIe22wPA==",
+  "dgSpecHash": "Az+D0CVhzBpmlPFFrBXI+twDlCh9eRxYZ2SLhYoLE8ITGeHPoQDQLSIq/6qIFFerhwJ69PnR1eCSscIVhTnwzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\BusinessLogicalLayer\\BusinessLogicalLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vtor_\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\azure.identity\\1.11.2\\azure.identity.1.11.2.nupkg.sha512",
     "C:\\Users\\vtor_\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
