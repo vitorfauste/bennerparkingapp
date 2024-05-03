@@ -15,13 +15,14 @@ namespace WFPresentationLayer
     {
         public FormEntradaSaidaVeiculos()
         {
-            InitializeComponent();
+
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000; // 1 segundo
             timer.Tick += new EventHandler(this.timer_Tick);
             timer.Start();
+            InitializeComponent();
         }
-        
+
         private void timer_Tick(object sender, EventArgs e)
         {
             lblDataHora.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy, HH:mm:ss");
@@ -31,6 +32,12 @@ namespace WFPresentationLayer
         {
             FormRegistrarEntradaModal formEntrada = new FormRegistrarEntradaModal();
             formEntrada.ShowDialog();
+        }
+
+        private void btnVigencia_Click(object sender, EventArgs e)
+        {
+            FormAlterarVigenciaPreco formVigencia = new FormAlterarVigenciaPreco();
+            formVigencia.ShowDialog();
         }
     }
 }

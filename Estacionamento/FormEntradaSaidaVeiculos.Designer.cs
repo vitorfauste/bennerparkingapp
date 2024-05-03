@@ -111,16 +111,17 @@
             // txtPesquisar
             // 
             txtPesquisar.Location = new Point(131, 212);
+            txtPesquisar.MaxLength = 8;
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(194, 23);
-            txtPesquisar.TabIndex = 6;
+            txtPesquisar.TabIndex = 3;
             // 
             // btnPesquisar
             // 
             btnPesquisar.Location = new Point(331, 212);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(75, 23);
-            btnPesquisar.TabIndex = 7;
+            btnPesquisar.TabIndex = 4;
             btnPesquisar.Text = "Pesquisar";
             btnPesquisar.UseVisualStyleBackColor = true;
             // 
@@ -142,9 +143,10 @@
             btnVigencia.Location = new Point(476, 114);
             btnVigencia.Name = "btnVigencia";
             btnVigencia.Size = new Size(223, 31);
-            btnVigencia.TabIndex = 9;
+            btnVigencia.TabIndex = 2;
             btnVigencia.Text = "Alterar vigência";
             btnVigencia.UseVisualStyleBackColor = false;
+            btnVigencia.Click += btnVigencia_Click;
             // 
             // lblDataHora
             // 

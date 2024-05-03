@@ -11,7 +11,7 @@ namespace BusinessLogicalLayer.Interfaces
 {
     public interface IRegistroEstacionamentoService
     {
-        public Task<Response> Create(RegistroEstacionamento vigencia);
+        public Task<Response> Create(RegistroEstacionamento registro);
 
         public Task<Response> UpdateRegistro(string placa, DateTime now, decimal valorHora);
     }

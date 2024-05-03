@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class VeiculoRepository : Repository<Veiculo>, ICarroRepository
+    public class VeiculoRepository : Repository<Veiculo>, IVeiculoRepository
     {
         public VeiculoRepository(EstacionamentoContext context) : base(context)
         {
