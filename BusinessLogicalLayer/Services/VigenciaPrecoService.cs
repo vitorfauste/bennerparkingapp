@@ -45,6 +45,12 @@ namespace BusinessLogicalLayer.Services
             try
             {
                 var vigencia = await _vigenciaRepository.GetInstance();
+
+                if (vigencia == null)
+                {
+                    return ResponseFactory.CreateInstance().CreateFailSingleResponse<VigenciaPreco>("VigenciaPreco not found.", null);
+                }
+
                 return ResponseFactory.CreateInstance().CreateSuccessSingleResponse<VigenciaPreco>(vigencia);
             }
             catch (Exception ex)
@@ -52,6 +58,7 @@ namespace BusinessLogicalLayer.Services
                 return ResponseFactory.CreateInstance().CreateFailSingleResponse<VigenciaPreco>(ex.Message, null);
             }
         }
+
 
         public async Task<Response> UpdateInstance(VigenciaPreco vigencia)
         {
@@ -63,17 +70,29 @@ namespace BusinessLogicalLayer.Services
             try
             {
                 var singleVigence = await GetInstance();
-                var vigence = singleVigence.Item;
-                vigence.UpdateVigenceItens(vigencia);
 
-                _vigenciaRepository.Update(vigence);
-                _unitOfWork.Commit();
-                return ResponseFactory.CreateInstance().CreateSuccessResponse();
+                if (singleVigence.HasSuccess && singleVigence.Item != null)
+                {
+                    var vigence = singleVigence.Item;
+                    vigence.UpdateVigenceItens(vigencia);
+
+                    _vigenciaRepository.Update(vigence);
+                    _unitOfWork.Commit();
+                    return ResponseFactory.CreateInstance().CreateSuccessResponse();
+                }
+                else
+                {
+                    // Handle case where VigenciaPreco is not found or is invalid
+                    return ResponseFactory.CreateInstance().CreateFailResponse("VigenciaPreco não encontrada ou inválida.");
+                }
             }
             catch (Exception ex)
             {
-                return ResponseFactory.CreateInstance().CreateFailResponse(ex.Message);
+                // Handle other exceptions
+                return ResponseFactory.CreateInstance().CreateFailResponse("Ocorreu um erro ao atualizar a vigência: " + ex.Message);
             }
         }
+
+
     }
 }

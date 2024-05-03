@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class TabelaPreco
+    public class TabelaPreco : BaseEntity
     {
         public decimal ValorHora { get; set; }
         public decimal ValorHoraAdicional { get; set; }

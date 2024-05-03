@@ -21,6 +21,10 @@ namespace Entities
             this.Veiculo = veiculo;
         }
 
+        public RegistroEstacionamento()
+        {
+        }
+
         // VERIFICAR NA HORA DE FAZER A TELA
         public decimal CalcularValorTotal(string? entrada, DateTime horaSaida, string? valorHora)
         {

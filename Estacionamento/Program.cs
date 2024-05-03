@@ -41,7 +41,7 @@ namespace WFPresentationLayer
             services.AddScoped(typeof(IRegistroEstacionamentoService), typeof(RegistroEstacionamentoService));
             services.AddScoped(typeof(IVigenciaPrecoService), typeof(VigenciaPrecoService));
 
-            services.AddDbContext<EstacionamentoContext>(options => options.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vtor_\OneDrive\Documentos\ParkingAppDB.mdf;Integrated Security=True;Connect Timeout=60"));
+            services.AddDbContext<EstacionamentoContext>(options => options.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vtor_\OneDrive\Documentos\ParkingAppDatabase.mdf;Integrated Security=True;Connect Timeout=30"));
 
             return services.BuildServiceProvider();
         }

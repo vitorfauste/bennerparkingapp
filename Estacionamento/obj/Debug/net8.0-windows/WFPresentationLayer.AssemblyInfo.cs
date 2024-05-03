@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WFPresentationLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30ff35ec18abd917415914ce57f9ea83a75bac96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecc315c78174c92a3c89ae99c4e836e4052e3a8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WFPresentationLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WFPresentationLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

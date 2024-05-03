@@ -50,15 +50,15 @@ namespace WFPresentationLayer
 
         private async void FormEntradaSaidaVeiculos_Load(object sender, EventArgs e)
         {
-            var movimentacoes = await _registroEstacionamentoService.GetAllMovimentacoes();
-            if (movimentacoes != null)
-            {
-                dgvGridCarros.DataSource = movimentacoes.Itens;
-            }
-            else
-            {
-                dgvGridCarros.DataSource = null;
-            }
+            //var movimentacoes = await _registroEstacionamentoService.GetAllMovimentacoes();
+            //if (movimentacoes != null)
+            //{
+            //    dgvGridCarros.DataSource = movimentacoes.Itens;
+            //}
+            //else
+            //{
+            //    dgvGridCarros.DataSource = null;
+            //}
         }
     }
 }

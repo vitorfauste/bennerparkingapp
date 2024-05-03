@@ -24,10 +24,13 @@ namespace BusinessLogicalLayer.Services
         private readonly IMemoryCache _memoryCache;
         private readonly IMapper _mapper;
 
-
-        public RegistroEstacionamentoService(IRegistroEstacionamentoRepository registroRepository)
+        public RegistroEstacionamentoService(IRegistroEstacionamentoRepository registroRepository, IVeiculoRepository veiculoRepository, IUnitOfWork unitOfWork, IMemoryCache memoryCache, IMapper mapper)
         {
             _registroRepository = registroRepository;
+            _veiculoRepository = veiculoRepository;
+            _unitOfWork = unitOfWork;
+            _memoryCache = memoryCache;
+            _mapper = mapper;
         }
 
         public async Task<Response> Create(RegistroEstacionamento registro)
