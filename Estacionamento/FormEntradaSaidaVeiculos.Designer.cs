@@ -173,6 +173,7 @@
             Controls.Add(picboxLogo);
             Name = "FormEntradaSaidaVeiculos";
             Text = "FormEntradaSaidaVeiculos";
+            Load += FormEntradaSaidaVeiculos_Load;
             gpbxListaCarros.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvGridCarros).EndInit();
             ((System.ComponentModel.ISupportInitialize)picboxLogo).EndInit();

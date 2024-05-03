@@ -14,5 +14,8 @@ namespace BusinessLogicalLayer.Interfaces
         public Task<Response> Create(RegistroEstacionamento registro);
 
         public Task<Response> UpdateRegistro(string placa, DateTime now, decimal valorHora);
+        public Task<DataResponse<RegistroEstacionamentoMapper>> GetAllMovimentacoes();
+
+        public Task<DataResponse<RegistroEstacionamentoMapper>> GetAllEntradas();
     }
 }

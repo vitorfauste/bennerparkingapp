@@ -47,5 +47,18 @@ namespace WFPresentationLayer
             FormAlterarVigenciaPreco formVigencia = new FormAlterarVigenciaPreco(_vigenciaPrecoService);
             formVigencia.ShowDialog();
         }
+
+        private async void FormEntradaSaidaVeiculos_Load(object sender, EventArgs e)
+        {
+            var movimentacoes = await _registroEstacionamentoService.GetAllMovimentacoes();
+            if (movimentacoes != null)
+            {
+                dgvGridCarros.DataSource = movimentacoes.Itens;
+            }
+            else
+            {
+                dgvGridCarros.DataSource = null;
+            }
+        }
     }
 }
