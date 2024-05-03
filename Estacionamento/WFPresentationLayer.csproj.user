@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="FormAlterarVigenciaPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormEntradaSaidaVeiculos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormRegistrarEntradaModal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormRegistrarSaidaModal.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

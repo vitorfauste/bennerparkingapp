@@ -1,5 +1,7 @@
 ﻿using DataAccessLayer.Context;
+using DataAccessLayer.Interfaces.Repositories;
 using Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +10,15 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class VeiculoRepository
+    public class VeiculoRepository : Repository<Veiculo>, IVeiculoRepository
     {
-        private readonly EstacionamentoContext _db;
-        public VeiculoRepository(EstacionamentoContext db)
+        public VeiculoRepository(EstacionamentoContext context) : base(context)
         {
-            this._db = db;
+        }
+
+        public async Task<Veiculo> GetByPlaca(string placa)
+        {
+            return await _context.Set<Veiculo>().Where(where => where.Placa == placa).FirstOrDefaultAsync();
         }
     }
 }

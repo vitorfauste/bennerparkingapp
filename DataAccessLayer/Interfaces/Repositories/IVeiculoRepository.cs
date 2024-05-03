@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Interfaces.Repositories
 {
-    public interface ICarroRepository : IRepository<Veiculo>
+    public interface IVeiculoRepository : IRepository<Veiculo>
     {
         Task<Veiculo> GetByPlaca(string placa);
     }

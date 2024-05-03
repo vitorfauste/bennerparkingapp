@@ -10,6 +10,13 @@ namespace Entities
     {
         public DateTime Inicio { get; set; }
         public DateTime Fim { get; set; }
+        public decimal ValorHora { get; set; }
 
+        public void UpdateVigenceItens(VigenciaPreco vigencia)
+        {
+            this.Inicio = vigencia.Inicio;
+            this.Fim = vigencia.Fim;
+            this.ValorHora = vigencia.ValorHora;
+        }
     }
 }

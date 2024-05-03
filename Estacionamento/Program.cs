@@ -1,3 +1,12 @@
+using BusinessLogicalLayer.Interfaces;
+using BusinessLogicalLayer.Services;
+using DataAccessLayer.Context;
+using DataAccessLayer.Interfaces.Repositories;
+using DataAccessLayer.Repositories;
+using Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace WFPresentationLayer
 {
     internal static class Program
@@ -8,34 +17,33 @@ namespace WFPresentationLayer
         [STAThread]
         static void Main()
         {
+            var serviceProvider = ConfigureServices();
+            var dbContext = serviceProvider.GetService<EstacionamentoContext>();
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormEntradaSaidaVeiculos());
+            Application.Run(new FormEntradaSaidaVeiculos(serviceProvider));
         }
 
-        //static IServiceProvider ConfigureServices()
-        //{
-        //    var services = new ServiceCollection();
+        static IServiceProvider ConfigureServices()
+        {
+            var services = new ServiceCollection();
 
-        //    services.AddAutoMapper(typeof(RegistroProfile));
-        //    services.AddMemoryCache();
+            services.AddAutoMapper(typeof(RegistroEstacionamentoMapper));
+            services.AddMemoryCache();
 
-        //    // Dependency Injection
-        //    services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
-        //    services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-        //    services.AddScoped(typeof(ICarroRepository), typeof(CarroRepository));
-        //    services.AddScoped(typeof(IRegistroRepository), typeof(RegistroRepository));
-        //    services.AddScoped(typeof(IVigenciaPrecoRepository), typeof(VigenciaPrecoRepository));
-        //    services.AddScoped(typeof(IRegistroAppService), typeof(RegistroAppService));
-        //    services.AddScoped(typeof(IVigenciaAppService), typeof(VigenciaAppService));
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IVeiculoRepository), typeof(VeiculoRepository));
+            services.AddScoped(typeof(IRegistroEstacionamentoRepository), typeof(RegistroEstacionamentoRepository));
+            services.AddScoped(typeof(IVigenciaPrecoRepository), typeof(VigenciaPrecoRepository));
+            services.AddScoped(typeof(IRegistroEstacionamentoService), typeof(RegistroEstacionamentoService));
+            services.AddScoped(typeof(IVigenciaPrecoService), typeof(VigenciaPrecoService));
 
-        //    services.AddDbContext<DataContext>(options =>
-        //options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=msdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
+            services.AddDbContext<EstacionamentoContext>(options => options.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vtor_\OneDrive\Documentos\ParkingAppDB.mdf;Integrated Security=True;Connect Timeout=60"));
 
-
-        //    // Construir o provedor de serviços
-        //    return services.BuildServiceProvider();
-        //}
+            return services.BuildServiceProvider();
+        }
     }
 }

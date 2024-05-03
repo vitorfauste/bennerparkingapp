@@ -8,6 +8,18 @@ namespace Shared
 {
     public class ResponseFactory
     {
+        private static ResponseFactory _factory;
+
+        public static ResponseFactory CreateInstance()
+        {
+            if (_factory == null)
+            {
+                _factory = new ResponseFactory();
+            }
+            return _factory;
+        }
+
+        private ResponseFactory() { }
         public Response CreateSuccessResponse()
         {
             return new Response("Sucesso na operação.", true);

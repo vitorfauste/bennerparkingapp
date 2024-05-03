@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "R4RTtSX4hgRLE+9DsUBgQ7ShqUzq2iXmqRmhI2sYXhi/V0C7OFCcAbnqNJKzd7jtRLfisKfo1piq/NGOXm45UA==",
+  "dgSpecHash": "Pp7HTYX7wj+aCfeCbV+aDUCS2tAilHPfLxoeOQPiOLxC67A5j3sE4wP05YcBeYnu0BAZxStWfNW5Xi9Egq/s3A==",
   "success": true,
   "projectFilePath": "C:\\Users\\vtor_\\OneDrive\\Documentos\\Code\\Benner\\ParkingApp\\Entities\\Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vtor_\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\vtor_\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\vtor_\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\vtor_\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\vtor_\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

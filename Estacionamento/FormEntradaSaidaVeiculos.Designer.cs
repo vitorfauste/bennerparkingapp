@@ -80,7 +80,7 @@
             // lblEstacionamento
             // 
             lblEstacionamento.AutoSize = true;
-            lblEstacionamento.Location = new Point(73, 9);
+            lblEstacionamento.Location = new Point(124, 8);
             lblEstacionamento.Name = "lblEstacionamento";
             lblEstacionamento.Size = new Size(92, 15);
             lblEstacionamento.TabIndex = 3;
@@ -90,7 +90,7 @@
             // picboxLogo
             // 
             picboxLogo.Image = Properties.Resources.image;
-            picboxLogo.Location = new Point(-132, 42);
+            picboxLogo.Location = new Point(-81, 41);
             picboxLogo.Name = "picboxLogo";
             picboxLogo.Size = new Size(521, 142);
             picboxLogo.SizeMode = PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             // 
             lblNomeEstacionamento.AutoSize = true;
             lblNomeEstacionamento.Font = new Font("Segoe UI", 15F);
-            lblNomeEstacionamento.Location = new Point(35, 24);
+            lblNomeEstacionamento.Location = new Point(86, 23);
             lblNomeEstacionamento.Name = "lblNomeEstacionamento";
             lblNomeEstacionamento.Size = new Size(196, 28);
             lblNomeEstacionamento.TabIndex = 5;
@@ -111,16 +111,17 @@
             // txtPesquisar
             // 
             txtPesquisar.Location = new Point(131, 212);
+            txtPesquisar.MaxLength = 8;
             txtPesquisar.Name = "txtPesquisar";
             txtPesquisar.Size = new Size(194, 23);
-            txtPesquisar.TabIndex = 6;
+            txtPesquisar.TabIndex = 3;
             // 
             // btnPesquisar
             // 
             btnPesquisar.Location = new Point(331, 212);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(75, 23);
-            btnPesquisar.TabIndex = 7;
+            btnPesquisar.TabIndex = 4;
             btnPesquisar.Text = "Pesquisar";
             btnPesquisar.UseVisualStyleBackColor = true;
             // 
@@ -142,9 +143,10 @@
             btnVigencia.Location = new Point(476, 114);
             btnVigencia.Name = "btnVigencia";
             btnVigencia.Size = new Size(223, 31);
-            btnVigencia.TabIndex = 9;
+            btnVigencia.TabIndex = 2;
             btnVigencia.Text = "Alterar vigência";
             btnVigencia.UseVisualStyleBackColor = false;
+            btnVigencia.Click += btnVigencia_Click;
             // 
             // lblDataHora
             // 
@@ -171,6 +173,7 @@
             Controls.Add(picboxLogo);
             Name = "FormEntradaSaidaVeiculos";
             Text = "FormEntradaSaidaVeiculos";
+            Load += FormEntradaSaidaVeiculos_Load;
             gpbxListaCarros.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvGridCarros).EndInit();
             ((System.ComponentModel.ISupportInitialize)picboxLogo).EndInit();

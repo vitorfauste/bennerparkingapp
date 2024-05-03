@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLogicalLayer.Interfaces;
+using Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +14,20 @@ namespace WFPresentationLayer
 {
     public partial class FormRegistrarEntradaModal : Form
     {
-        public FormRegistrarEntradaModal()
+        private readonly IRegistroEstacionamentoService _registroEstacionamentoService;
+        decimal valor;
+        public FormRegistrarEntradaModal(decimal valorHora, IRegistroEstacionamentoService registro)
         {
+            this.valor = valorHora;
+            this._registroEstacionamentoService = registro;
             InitializeComponent();
             dtpHora.Format = DateTimePickerFormat.Time;
+            txtPlaca.MaxLength = 8;
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            _registroEstacionamentoService.Create(new RegistroEstacionamento(dtpHora.Value, valor, new Veiculo(txtPlaca.Text)));
         }
     }
 }

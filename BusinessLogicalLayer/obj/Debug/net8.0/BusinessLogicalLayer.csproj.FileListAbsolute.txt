@@ -14,3 +14,7 @@ C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\o
 C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\refint\BusinessLogicalLayer.dll
 C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\BusinessLogicalLayer.pdb
 C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\obj\Debug\net8.0\ref\BusinessLogicalLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\Shared.dll
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\vtor_\OneDrive\Documentos\Code\Benner\ParkingApp\BusinessLogicalLayer\bin\Debug\net8.0\Shared.pdb
